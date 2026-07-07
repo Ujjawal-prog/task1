@@ -1,0 +1,405 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(120deg,
+            #f48fb1,
+            #ce93d8,
+            #29b6f6);
+
+    padding: 40px;
+
+}
+
+
+/* ==========================
+        MAIN CARD
+========================== */
+
+.container {
+
+    width: 680px;
+    min-height: 700px;
+
+    background: rgba(255, 255, 255, .75);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 25px;
+
+    padding: 35px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
+
+}
+
+
+/* ==========================
+        TITLE
+========================== */
+
+h1 {
+
+    text-align: center;
+
+    color: #8a2be2;
+
+    margin-bottom: 30px;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+}
+
+
+/* ==========================
+      INPUT SECTION
+========================== */
+
+.input-section {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 15px;
+
+}
+
+.input-section input,
+.input-section select {
+
+    padding: 15px;
+
+    border: 2px solid #e7e7e7;
+
+    border-radius: 15px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: .3s;
+
+}
+
+.input-section input:focus,
+.input-section select:focus {
+
+    border-color: #7c4dff;
+
+}
+
+
+/* ==========================
+        BUTTONS
+========================== */
+
+.buttons {
+
+    margin-top: 18px;
+
+}
+
+#addBtn {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #8e44ec;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+#addBtn:hover {
+
+    background: #6d28d9;
+
+}
+
+
+/* ==========================
+        TABS
+========================== */
+
+.tabs {
+
+    margin-top: 25px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    background: #f4eaea;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+}
+
+.tab {
+
+    padding: 14px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.tab:hover {
+
+    background: #ece7ff;
+
+}
+
+.tab.active {
+
+    background: white;
+
+    color: #4f46e5;
+
+}
+
+
+/* ==========================
+       GROCERY LIST
+========================== */
+
+.list {
+
+    margin-top: 30px;
+
+    min-height: 250px;
+
+}
+
+.item {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+
+}
+
+.item-left h3 {
+
+    font-size: 18px;
+
+    color: #333;
+
+}
+
+.item-left p {
+
+    margin-top: 5px;
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+.item-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+.item-right button {
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: 8px 12px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-weight: 600;
+
+}
+
+.buyBtn {
+
+    background: #22c55e;
+
+}
+
+.deleteBtn {
+
+    background: #ef4444;
+
+}
+
+
+/* ==========================
+        HR
+========================== */
+
+hr {
+
+    margin: 30px 0;
+
+    border: none;
+
+    border-top: 2px dashed #d6d6d6;
+
+}
+
+
+/* ==========================
+        FOOTER
+========================== */
+
+.footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.label {
+
+    color: #7c7c7c;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+
+}
+
+#totalCost {
+
+    color: #3b5bff;
+
+    margin-top: 5px;
+
+    font-size: 35px;
+
+}
+
+#clearBtn {
+
+    border: none;
+
+    padding: 13px 25px;
+
+    background: #ffd7df;
+
+    color: #ff3b5c;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+#clearBtn:hover {
+
+    background: #ffc2cf;
+
+}
+
+
+/* ==========================
+      RESPONSIVE
+========================== */
+
+@media(max-width:700px) {
+
+    .container {
+
+        width: 100%;
+
+        padding: 25px;
+
+    }
+
+    .input-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    h1 {
+
+        font-size: 30px;
+
+    }
+
+    .footer {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+
+    }
+
+}

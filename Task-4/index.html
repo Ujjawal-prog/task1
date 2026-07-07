@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Grocery Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Pro Grocery Planner</h1>
+
+        <!-- Input Section -->
+
+        <div class="input-section">
+
+            <input type="text" id="itemName" placeholder="Item name (e.g., Atta, Milk)">
+
+            <select id="category">
+
+                <option value="Produce">Produce</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Bakery">Bakery</option>
+                <option value="Other">Other</option>
+
+            </select>
+
+            <input type="number" id="quantity" placeholder="Qty" min="1" value="1">
+
+            <input type="number" id="price" placeholder="Price (₹)" min="0">
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button id="addBtn">
+                Add Item
+            </button>
+
+        </div>
+
+        <!-- Tabs -->
+
+        <div class="tabs">
+
+            <button class="tab active" data-filter="all">
+                All Items
+            </button>
+
+            <button class="tab" data-filter="todo">
+                To Buy
+            </button>
+
+            <button class="tab" data-filter="bought">
+                Bought
+            </button>
+
+        </div>
+
+        <!-- Grocery List -->
+
+        <div id="groceryList" class="list">
+
+            <!-- JavaScript will insert items here -->
+
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+
+        <div class="footer">
+
+            <div>
+
+                <p class="label">
+                    EST. TOTAL COST
+                </p>
+
+                <h2 id="totalCost">
+                    ₹0.00
+                </h2>
+
+            </div>
+
+            <button id="clearBtn">
+                Clear List
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
